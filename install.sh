@@ -38,7 +38,7 @@ echo -e "${GREEN}Update Remi PHP and install PHP 8.2\n${ENDCOLOR}"
 dnf -y install http://rpms.remirepo.net/enterprise/remi-release-8.rpm
 dnf module reset php -y
 dnf module install php:remi-8.2 -y
-dnf -y install php php-fpm php-imap php-mbstring php-mysqlnd php-gd php-opcache php-json php-curl php-zip php-xml php-bz2 php-intl php-gmp php-pdo php-pdo_mysql
+dnf -y install php php-fpm php-mbstring php-mysqlnd php-gd php-opcache php-json php-curl php-zip php-xml php-bz2 php-intl php-gmp php-pdo php-pdo_mysql
 php -v
 
 echo -e "${GREEN}Turning on the Firewall\n${ENDCOLOR}"
